@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BLoFISH Clothing Co.</title>
+    <link rel="stylesheet" type="text/css" href="content/css/style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand|Merriweather:300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html"><img class="diamond" src="content/images/diamondhat.png" /></a>
+        <a href="about.html"><img class="fish about" src="content/images/logo.png" /></a>
+        <a href="store.html"><img class="fish store" src="content/images/logo.png" /></a>
+    </div>
+    <div class="products top side">
+        <div class="layer">
+            <a href="items.html"><h1>Top</h1></a>
+        </div>
+    </div>
+    <div class="products middle side">
+        <div class="layer">
+            <a href="items.html"><h1>Middle</h1></a>
+        </div>
+    </div>
+    <div class="products bottom side">
+        <div class="layer">
+            <a href="items.html"><h1>Bottom</h1></a>
+        </div>
+    </div>
+    <div class="section side">
+        <div class="container">
+            <h1>Top</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar ex in metus rutrum, ut eleifend tortor semper. Curabitur quis odio in neque tincidunt pulvinar.
+            </p>
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/product.png" />
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/product.png" />
+        </div>
+        <div class="details">
+            <h1>BLoFISH</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar ex in metus rutrum, ut eleifend tortor semper. Curabitur quis odio in neque tincidunt pulvinar. Fusce hendrerit ultricies fringilla. Proin aliquet ligula sit amet eros suscipit scelerisque. Praesent rhoncus vehicula elementum. Suspendisse libero risus, viverra sit amet sagittis sit amet, sollicitudin eget leo. Phasellus vel ultrices turpis, a bibendum dolor. Mauris eget ante in diam fringilla tempus. Praesent dignissim elementum ultrices. Ut suscipit commodo euismod. Aenean est nisl, faucibus ut ullamcorper et, ultrices et eros. Nulla viverra est nec varius porttitor. Pellentesque vitae quam nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed magna diam, ultricies a tristique at, ultrices eu libero. Nam laoreet risus at vehicula imperdiet.
+            </p>
+            <a href="#" class="button">Buy</a>
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/product.png" />
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/product.png" />
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.product').click(function() {
+            $(this).toggleClass('active');
+            $('.details').slideToggle(300);
+        });
+    </script>
+</body>
+</html>

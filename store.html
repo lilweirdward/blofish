@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BLoFISH Clothing Co.</title>
+    <link rel="stylesheet" type="text/css" href="content/css/style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand|Raleway:300,700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <a href="index.html" id="logo"><img src="content/images/diamondhat.png" /></a>
+        <header>
+            <span class="store"><a href="store.html"><img class="fish store" src="content/images/logo-white.png" />store</a></span>
+            <span class="about"><a href="about.html"><img class="fish about" src="content/images/logo-white.png" />about</a></span>
+            <i class="fa fa-shopping-cart fa-2x fa-inverse"></i>
+        </header>
+        <div class="categories">
+            <div class="top">
+                <!-- <div class="layer"> -->
+                    <h1>Top</h1>
+                    <i class="fa fa-long-arrow-up fa-5x"></i>
+                <!-- </div> -->
+            </div>
+            <div class="middle">
+                <!-- <div class="layer"> -->
+                    <h1>Middle</h1>
+                    <i class="fa fa-arrows-h fa-5x"></i>
+                <!-- </div> -->
+            </div>
+            <div class="bottom">
+                <!-- <div class="layer"> -->
+                    <h1>Bottom</h1>
+                    <i class="fa fa-long-arrow-down fa-5x"></i>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="section side">
+        <div class="container">
+            <!-- <h1>Top</h1> -->
+            <img class="header" src="content/images/words-logo.png" />
+            <div class="mini-categories">
+                <span class="bold">Top</span> |
+                <span>Middle</span> |
+                <span>Bottom</span> |
+                <span><i class="fa fa-shopping-cart"></i> $0</span>
+            </div>
+            <p>
+                For us at BLoFISH Clothing, "All for All" isn't just our slogan, it is our lifestyle, one we live and breathe every moment. Share your story, and share the message: #A4A
+            </p>
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/hat.png" />
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/hat.png" />
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/hat.png" />
+        </div>
+        <div class="product">
+            <img class="image" src="content/images/hat.png" />
+        </div>
+        <div class="details">
+            <div class="main">
+                <h1>"Color Blind"</h1>
+                <span class="price">$22.00</span>
+                <div class="options">
+                    <fieldset class="s">
+                        <legend>Size:</legend>
+                        <a href="#" class="hint">Sizing Chart</a>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="q">
+                        <legend>Quantity:</legend>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </fieldset>
+                    <a href="#" class="button">Buy</a>
+                </div>
+                <h2>Product Description</h2>
+                <p>
+                    Our newest flat-bill snapback.  Heather Grey with the Blofish logo on the front. OSFA
+                </p>
+            </div>
+            <div class="sidebar">
+                <h2>Product Details</h2>
+                <ul>
+                    <li>Material: 100% Wool</li>
+                    <li>Features: Snapback</li>
+                    <li>Care: Do Not Wash</li>
+                    <li>Made In: USA</li>
+                </ul>
+                <h2>Reviews</h2>
+                <ul>
+                    <li>[to be completed]</li>
+                </ul>
+                <h2>You might also like...</h2>
+                <ul>
+                    <li>[to be completed]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.categories div').click(function() {
+            $(this).parent().addClass('side');
+            $('.categories div').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('.product').click(function() {
+            var wasAlreadyActive = false;
+            if ($(this).hasClass('active'))
+                wasAlreadyActive = true;
+            $('.product').removeClass('active');
+            $('.details').slideUp(300);
+            if (!wasAlreadyActive) {
+                $(this).addClass('active');
+                $('.details').slideDown(300);
+            }
+        });
+    </script>
+</body>
+</html>
